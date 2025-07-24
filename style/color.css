@@ -23,13 +23,20 @@
 
 
 /* nav-bar sec */
+.logo img{
+    width: 100%;
+    
+}
+
 .logo{
     justify-content: space-between;
 }
 
-.menu-item-1{
+.item-1{
      list-style: none;
-    margin-right: 45px
+    margin-right: 45px;
+    
+    
 }
 
 .menu-item{
@@ -46,6 +53,7 @@
 }
 .menu-link-2{
     color: #000000;
+    text-decoration: none;
 }
 
 .logo, .banner-section{
@@ -75,20 +83,80 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+/* our plant section start */
+.our-plant{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.plant-title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.plant-description{
+    font-size: 1.35rem;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.plant-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.plant-item img{
+    width: 100%;
+}
+.plant-item{
+    padding-bottom: 30px;
+}
+
+
+
+.card-title{
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+.card-price{
+     font-size: 1.35rem;
+    font-weight: bold;
+}
+.card-btn{
+    padding: 20px 80px;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border: none;
+    width: 270;
+}
+
+
+
+
 
 /* mobile responsive */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .logo{
         justify-content: space-between;
     }
     .menu-item{
         display: none;
     }
-
-    .banner-section{
+       .banner-section{
         flex-direction: column-reverse;
-        padding: 20px;
         justify-items: center;
     }
-
+    .plant-box{
+        flex-direction: column;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 20px; 
+    }
+    .plant-title, .plant-description{
+        margin-left: 20px;
+    }
 }
+ 

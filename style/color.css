@@ -13,6 +13,9 @@
 
 
 /* shared style */
+.word-1{
+    color: #E95A08 ;
+}
 
 .display-flex{
     display: flex;
@@ -22,6 +25,11 @@
 /* nav-bar sec */
 .logo{
     justify-content: space-between;
+}
+
+.menu-item-1{
+     list-style: none;
+    margin-right: 45px
 }
 
 .menu-item{
@@ -40,8 +48,47 @@
     color: #000000;
 }
 
-.logo, .banner{
+.logo, .banner-section{
     max-width: 1140px;
     margin: 0 auto;
 }
 
+
+/* banner style */
+.banner-section{
+   display: flex;
+   align-items: center;
+   margin-top: 250px;
+   margin-bottom: 100px;
+}
+.banner-image{
+    width: 560px;
+    height: auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* mobile responsive */
+@media screen and (max-width: 576px){
+    .logo{
+        justify-content: space-between;
+    }
+    .menu-item{
+        display: none;
+    }
+
+    .banner-section{
+        flex-direction: column-reverse;
+        padding: 20px;
+        justify-items: center;
+    }
+
+}

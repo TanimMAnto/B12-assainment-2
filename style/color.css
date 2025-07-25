@@ -27,10 +27,6 @@
 
 
 /* nav-bar sec */
-.logo img{
-    
-    
-}
 
 .logo{
     justify-content: space-between;
@@ -162,6 +158,50 @@
     margin-bottom: 20px;
 }
 
+/* Join the colorful Bunch */
+.join-the-bunch{
+    background-image: url(/assets/news-letter-bg.png);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.colorful{
+    margin: auto;
+   
+    
+}
+.colorful-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.color-item,input{
+    padding-right: 550px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.color-btn{
+    padding: 17px 53px;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border: none;
+    
+    
+}
+.color-input{
+    max-width: 500px;
+    display: flex;
+    gap: 5px;
+}
+
+
 
 
 
@@ -198,5 +238,14 @@
     .lover-container{
         align-items: center;
     }
+
+    .join-the-bunch{
+        background-size: cover;
+    }
+
+    .colorful{
+        flex-direction: column;
+    }
+    
 }
  
